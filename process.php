@@ -78,11 +78,25 @@ foreach ($dataToSend as $username => $data) {
     $messageBody .= 'Please review this branches and remove them or merge to development.<br>Or keep in mind that you have this branches not merged to development. <br><br>';
     $messageBody .= 'Thanks and have a nice day!';
 
+    /**
+     * create message instance
+     */
     $message = Swift_Message::newInstance('Morning pre-work email')
         ->setFrom([$config['app']['email']['from'] => $config['app']['name']])
         ->setTo($config['users'][$username]['sendTo'])
         ->setContentType('text/html')
         ->setBody($messageBody);
+
+    /**
+     * add custom headers
+     */
+    if (!empty($config['app']['email']['headers'])) {
+        $headers = $message->getHeaders();
+
+        foreach ($config['app']['email']['headers'] as $headerName => $headerValue) {
+            $headers->addTextHeader($headerName, $headerValue);
+        }
+    }
 
     /**
      * send

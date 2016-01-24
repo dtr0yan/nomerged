@@ -21,7 +21,10 @@ return [
             'smtpServer' => 'aspmx.l.google.com',
             'port' => 25,
             'user' => 'username',
-            'password' => 'userpassword'
+            'password' => 'userpassword',
+            'headers' => [
+                // list of headers
+            ]
         ]
     ],
     'log' => [
