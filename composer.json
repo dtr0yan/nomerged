@@ -1,5 +1,5 @@
 {
-    "name": "dmitry-php/prework-mail",
+    "name": "dmitry-php/nomerged",
     "description": "Send email with git branches list not merged to development (or other branch)",
     "require": {
         "swiftmailer/swiftmailer": "^5.4",
