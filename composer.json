@@ -1,0 +1,15 @@
+{
+    "name": "dmitry-php/prework-mail",
+    "description": "Send email with git branches list not merged to development (or other branch)",
+    "require": {
+        "swiftmailer/swiftmailer": "^5.4",
+        "symfony/process": "^3.0",
+        "monolog/monolog": "^1.17"
+    },
+    "authors": [
+        {
+            "name": "Dmitriy Troyan",
+            "email": "troyan.dmitriy@gmail.com"
+        }
+    ]
+}
