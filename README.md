@@ -1,6 +1,6 @@
 Nomerged
 --------
-This script allow to execute command
+This script allows to execute command
 ```
 git for-each-ref --format='%(committerdate) %09 %(authorname) %09 %(refname)' --no-merged <some-branch>
 ```
@@ -10,6 +10,6 @@ Just clone project, add config.php (example in config.sample.php) and execute (o
 ```
 php /paht/to/process.php
 ```
-Every of us can forget what for and when we create some branches.
+Anyone can forget what for and when we create some branches.
 
-Hope this script will help someone.
+Hope this script will be helpful.
